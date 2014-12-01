@@ -1,0 +1,23 @@
+#!/bin/bash -e
+
+#export GOPATH=${PWD}/gopath
+
+source ./run/z
+go test
+
+: '
+cd redis
+
+go test -v conn_test.go
+go test -v pool_test.go
+go test -v pubsub_test.go
+go test -v reply_test.go
+go test -v scan_test.go
+go test -v script_test.go
+go test zpop_example_test.go
+
+# an example of a multiline comment
+
+cd hi
+cd bye
+'

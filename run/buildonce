@@ -1,0 +1,4 @@
+#!/bin/bash -e
+
+source ./run/z
+go get github.com/stormasm/context

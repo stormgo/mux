@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/gorilla/context"
+	"github.com/stormasm/context"
 )
 
 type routeTest struct {
